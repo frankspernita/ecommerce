@@ -1,0 +1,35 @@
+; cPanel-generated php ini directives, do not edit
+; Manual editing of this file may result in unexpected behavior.
+; To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+; For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+
+date.timezone = 'America/Argentina/Tucuman';
+mysql.connect_timeout = 240
+upload_max_filesize = 9999M
+post_max_size = 9999M
+max_execution_time = 99999999
+memory_limit = 1024M
+allow_url_fopen = On
+allow_url_include = Off
+asp_tags = Off
+display_errors = Off
+enable_dl = Off
+file_uploads = On
+max_input_time = 60
+max_input_vars = 1000
+;session.gc_maxlifetime = 1440
+session.gc_maxlifetime = 86400
+session.save_path = "/home/sispoc5/tmp"
+;session.cookie_lifetime = 1440
+session.cookie_lifetime = 86400
+always_populate_raw_post_data=-1
+
+expose_php=Off
+log_errors=On
+;error_log="c:\xampp\php\logs\php_errors.log"
+disable_functions =exec,passthru,shell_exec,system,proc_open,popen,curl_multi_exec,parse_ini_file,show_source
+cgi.force_redirect=On
+
+; http://php.net/mysql.allow-persistent
+mysql.allow_persistent = Off
+zlib.output_compression = Off
